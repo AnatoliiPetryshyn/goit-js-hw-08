@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form class="form" data-form="test-form">
+      <button
+        type="submit"
+        data-action="submit"
+        class="button button-submit isDisabled"
+        disabled
+      >
+        Проверить
+      </button>
+      <button type="button" data-action="clearForm" class="button button-clear">
+        Попробывать еще раз
+      </button>
+    </form>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h2 class="modal__title">Резулатат теста</h2>
+        <p class="modal__rightAnswers js-modal__rightAnswers"></p>
+        <p class="modal__percentage js-modal__percentage"></p>
+        <p class="modal__message js-modal__message"></p>
+        <button type="button" class="button" data-action="close-modal">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/quizData.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
